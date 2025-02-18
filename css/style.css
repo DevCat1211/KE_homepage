@@ -256,7 +256,7 @@ body{
     display: flex;
     position: absolute;
     width: 100%;
-    padding: 20px 100px;
+    padding: 5vh 100px;
     align-items: center;
     text-align: center;
     color: #fff;
@@ -276,7 +276,7 @@ body{
 }
 
 .navbar-left li{
-    margin: 15px;
+    margin-left: 10vh;
 }
 
 .navbar-right{
