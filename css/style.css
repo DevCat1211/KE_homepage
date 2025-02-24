@@ -245,11 +245,180 @@ body{
     margin-bottom: 20px;
 }
 
-#experience{
-    background-color: #f9f9f9;
+#recruiting{
     display: flex;
     flex-direction: column;
-    height: 120vh;
+    background-image: url('../img/recruting-back.jpg');
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#recruiting h1{
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 50px;
+}
+
+#recruiting p{
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+#recruiting a{
+    padding: 10px 20px;
+    background-color: #ff7f00;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#recruiting a:hover{
+    background-color: #ffffff;
+    color: #ff7f00;
+    border: #ff7f00;
+}
+
+#experience{
+    background-color: #f5f5ff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#experience-title{
+    font-size: 60px;
+    font-weight: 700;
+    margin: auto;
+}
+
+.expr-line{
+    width: 80%;
+    height: 1px;
+    background-color: #000;
+    margin: 20px auto;
+}
+
+.experience-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 150px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.experience-item{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+}
+
+.experience-item h2{
+    font-size: 25px;
+}
+
+.experience-item-top{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.experience-icon{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.current{
+    background-color: #f9f9f9;
+    display: flex;
+}
+
+#current-title{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#current-wrapper{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.current-left, .current-right{
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    z-index: 3;
+}
+
+.current-left{
+    left:0;
+}
+
+.current-right{
+    right:0;
+}
+
+#current-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+/* 카드 스타일 보완: margin으로 양쪽 7vw 노출, 배경/그림자 적용, 기본 높이 지정 */
+#current-track .current-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    width: 70vw;
+    height: 100vh;
+    margin: 0 1vw;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: translateX 2s ease, opacity 1s;
+    flex-shrink: 0;
+    opacity: 0.5;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.current-card h1{
+    font-size: 40px;
+    color: #fff;
+    margin: 30px;
+}
+
+.current-card p{
+    font-size: 20px;
+    color: #fff;
+    margin: 30px;
+}
+
+#current-track .current-card.card-active {
+    opacity: 1;
 }
 
 .navbar{
